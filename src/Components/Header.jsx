@@ -1,7 +1,7 @@
-
+import PropTypes from 'prop-types';
 import Image from '../assets/images/logo.png'
 
-const Header = () => {
+const Header = ({coins}) => {
     return (
         <div className="navbar bg-base-100">
         <div className="flex-1">
@@ -16,12 +16,15 @@ const Header = () => {
             
           </ul>
          <div className='ml-10 '>
-         <button className='border-2 px-6 py-2 rounded-lg border-slate-300'> 0 Coin </button>
+         <button className='border-2 px-6 py-2 rounded-lg border-slate-300'>{coins} Coin </button>
          </div>
          
         </div>
       </div>
     );
 };
+Header.propTypes = {
+  coins:PropTypes.number.isRequired
+}
 
 export default Header;

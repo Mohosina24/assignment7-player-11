@@ -2,9 +2,9 @@ import Image from '../assets/images/logo-footer.png'
 
 const Footer = () => {
     return (
-        <div>
+        <div className='mt-96'>
            
-            <div className="hero h-72  bg-white w-8/12 md:w-9/12 absolute z-10 -mt-36 mx-44 md:mx-16 lg:mx-24 border-2 p-8"
+            <div className="hero h-72  bg-white w-8/12 md:w-9/12 absolute z-10 -mt-36 mx-44 md:mx-16 lg:mx-32 border-2 p-8"
   style={{
  
     backgroundImage: 'url(https://i.ibb.co.com/XffDC9pr/bg-shadow.png)',
@@ -28,7 +28,7 @@ const Footer = () => {
 
             </div>
                 {/* footer section */}
-        <footer className=' bg-black relative ' >
+        <footer className=' bg-black relative  ' >
             <div className='pt-48'>
             <div className='flex justify-center '>
                     <img className='' src={Image} alt="" />
@@ -60,10 +60,7 @@ const Footer = () => {
           placeholder="enter your email"
           className="input input-bordered join-item" />
         <button className="btn  join-item bg-[#E7FE29] hover:bg-[#E7FE29]"
-        
-        style={{
-            background:""
-        }}
+      
         >Subscribe</button>
       </div>
     </fieldset>
